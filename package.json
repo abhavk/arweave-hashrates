@@ -1,0 +1,20 @@
+{
+  "name": "arweave_hashrates",
+  "version": "1.0.0",
+  "description": "arweave hashrates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "arweave",
+    "hashrates"
+  ],
+  "author": "abhav",
+  "license": "ISC",
+  "dependencies": {
+    "arweave": "^1.10.23",
+    "chart.js": "^3.8.0",
+    "gql-query-builder": "^3.6.0"
+  }
+}
