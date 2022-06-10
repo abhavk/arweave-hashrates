@@ -12,8 +12,9 @@ const arweave = Arweave.init({
 
 let response;
 var stream = fs.createWriteStream("rewardees.txt", { flags: 'a' });
-const height = parseInt(process.argv[2]);
-for (let i = height; i > 940605; i--) {
+const from_height = parseInt(process.argv[2]);
+const to_height = parseInt(process.argv[3]);
+for (let i = to_height; i > from_height; i--) {
 	try {
 		response = await arweave.api.get(`/block/height/${i}`);
 	} catch (error) {
